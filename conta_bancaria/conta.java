@@ -1,4 +1,4 @@
-public class conta {
+public class Account {
   private String name;
   private float value;
   private int numAccount;
