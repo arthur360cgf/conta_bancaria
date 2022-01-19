@@ -12,10 +12,10 @@ public class conta {
 
   }
   
-  void extrato(){
+  void statement(){
     System.out.println("Name:"+name+"/n"+"Value in account:"+value+"n/"+"Account number:"+numAccount);
   }
-  public float sacar(int withdraw){
+  public float Money(int withdraw){
     float y = value - withdraw;
 
     if (value >= withdraw){
