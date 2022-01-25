@@ -20,6 +20,8 @@ public class Main{
     //Creating new client account
     Account myAccount = new Account(name, numAccount, initial);
     myAccount.iniciate();
+
+    sc.close();
   }
 
 
