@@ -8,12 +8,10 @@ public class Account {
   
   Scanner sc = new Scanner(System.in);
 
-  public Account(String name, double balance, double value, int numAccount, double withdraw){
+  public Account(String name, int numAccount, double initial_value){
     this.name = name;
-    this.balance = balance;
-    this.value = value;
+    this.value = initial_value;
     this.numAccount = numAccount;
-    this.withdraw = withdraw;
 
   }
   public String getName(){
@@ -122,6 +120,17 @@ public class Account {
         else{
           System.out.println("You already reached your daily limit");
         }
+      case 3:
+        System.out.println("How much you want deposit: ");
+        value = sc.nextDouble();
+        deposit(value);
+        break;
+
+      case 4:
+        System.out.println("Closing aplication, thanks for use");
+      
+      default:
+        System.out.println("Invalid Option please select a valid option");
 
     }
   }
